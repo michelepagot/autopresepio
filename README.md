@@ -5,30 +5,42 @@ SW to animate 2016 Presepio. The idea is to use :
 But also to give a try to [PlatformIO](https://github.com/platformio) ... and it woks pretty well!!!
 
 # Project config and toolchain
+Tested on a windows machine 
+## Prerequisite
+   * Miniconda
+   * Git
+   * cmd default Windows shell
 
 ## Python env with miniconda
-conda create --name arduino python
-activate arduino
+`> conda create --name arduino python
+> activate arduino
+`
 
 ## PlatformIO install
-pip install platformio
+`> pip install platformio
+`
 
 ## Init project
-mkdir autopresepio
-cd autopresepio
-platformio init --board uno
+`> mkdir autopresepio
+> cd autopresepio
+> platformio init --board uno
+`
 
 ## Build and load
-platformio run
-platformio run --target upload
+`> platformio run
+ > platformio run --target upload
+`
 
 ## Registration needed to use Unitesting
-platformio account register -u <myemail@yuppy.io>
-pio account login
+`> platformio account register -u <myemail@yuppy.io>
+ > pio account login
+`
 
 ## Run test
-platformio test -e uno --verbose
+`> platformio test -e uno --verbose
+`
 
 ## Try submodule to import dependency
-cd lib
-git submodule add https://github.com/kroimon/Arduino-SerialCommand.git SerialCommand
+`> cd lib
+> git submodule add https://github.com/kroimon/Arduino-SerialCommand.git SerialCommand
+`
