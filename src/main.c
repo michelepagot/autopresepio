@@ -6,6 +6,7 @@
 */
 #ifndef UNIT_TEST
 #include "Arduino.h"
+#include <SerialCommand.h>
 
 void setup()
 {

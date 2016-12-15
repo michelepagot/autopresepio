@@ -1,3 +1,5 @@
 .pioenvs
 .piolibdeps
 draft
+*.un~
+src/main.c~
