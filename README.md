@@ -12,37 +12,42 @@ Tested on a windows machine
    * cmd default Windows shell
 
 ## Python env with miniconda
-`> conda create --name arduino python
+```
+> conda create --name arduino python=2
 > activate arduino
-`
+```
 
 ## PlatformIO install
-`> pip install platformio
-`
+```
+> pip install platformio
+```
 
 ## Init project
-`> mkdir autopresepio
+```
+> mkdir autopresepio
 > cd autopresepio
 > platformio init --board uno
-`
+```
 
 ## Build and load
-`> platformio run
- > platformio run --target upload
-`
+```
+> platformio run
+> platformio run --target upload
+```
 
 ## Registration needed to use Unitesting
-`> platformio account register -u <myemail@yuppy.io>
+```
+> platformio account register -u <myemail@yuppy.io>
  > pio account login
-`
+```
 
 ## Run test
-`> platformio test -e uno --verbose
-`
+```
+> platformio test -e uno --verbose
+```
 
-## Try submodule to import dependency
-`> cd lib
-> git submodule add https://github.com/kroimon/Arduino-SerialCommand.git SerialCommand
-`
-
+## Use external dependency
+```
+> cd lib
 > pio lib install FastLED
+```
