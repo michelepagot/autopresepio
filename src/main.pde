@@ -8,8 +8,13 @@
 #include "Arduino.h"
 #include <SerialCommand.h>
 
+
+SerialCommand sCmd;     // The demo SerialCommand object
+
 void setup()
 {
+ Serial.begin(9600);
+ sCmd.addCommand("SET_RANGE",SET_range);
  // initialize LED digital pin as an output.
  pinMode(LED_BUILTIN, OUTPUT);
 }
@@ -27,5 +32,10 @@ void loop()
 
   // wait for a second
  delay(200);
+}
+
+void SET_range()
+{
+  Serial.println("");
 }
 #endif // UNIT_TEST

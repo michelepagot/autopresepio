@@ -3,3 +3,4 @@
 draft
 *.un~
 src/main.c~
+*.pde~

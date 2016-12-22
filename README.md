@@ -44,3 +44,5 @@ Tested on a windows machine
 `> cd lib
 > git submodule add https://github.com/kroimon/Arduino-SerialCommand.git SerialCommand
 `
+
+> pio lib install FastLED
