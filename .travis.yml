@@ -32,9 +32,12 @@ sudo: false
 cache:
     directories:
          - "~/.platformio"
-
+env:
+    - PLATFORMIO_CI_SRC=src/main.pde
+    
 install:
          - pip install -U platformio
+         - platformio lib install SerialCommand 
 
 script:
          - platformio ci --board=uno --board=micro
