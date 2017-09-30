@@ -2,6 +2,7 @@
 SW to animate 2016 Presepio. The idea is to use :
    * [adafruit motor shield v2](https://github.com/adafruit/Adafruit_Motor_Shield_V2_Library) to move around some stuff
    * [FastLed](https://github.com/FastLED/FastLED) to control a WS2811 powered 50 led strip
+
 But also to give a try to [PlatformIO](https://github.com/platformio) ... and it woks pretty well!!!
 
 # Project config and toolchain
