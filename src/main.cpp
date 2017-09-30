@@ -4,12 +4,12 @@
 * Turns on an LED on for one second,
 * then off for one second, repeatedly.
 */
-#ifndef UNIT_TEST
 #include "Arduino.h"
 #include <SerialCommand.h>
 
 
 SerialCommand sCmd;     // The demo SerialCommand object
+void SET_range(void);
 
 void setup()
 {
@@ -38,4 +38,3 @@ void SET_range()
 {
   Serial.println("");
 }
-#endif // UNIT_TEST
