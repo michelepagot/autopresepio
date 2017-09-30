@@ -36,17 +36,6 @@ Tested on a windows machine
 > platformio run --target upload
 ```
 
-## Registration needed to use Unitesting
-```
-> platformio account register -u <myemail@yuppy.io>
- > pio account login
-```
-
-## Run test
-```
-> platformio test -e uno --verbose
-```
-
 ## Use external dependency
 ```
 > cd lib
